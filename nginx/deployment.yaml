@@ -13,18 +13,11 @@ spec:
         app: nginx
     spec:
       securityContext:
-        runAsNonRoot: true
         seccompProfile:
           type: RuntimeDefault
 
       containers:
       - name: nginx
         image: harbor.clab.ai/oss/nginx:1.27.0
-        securityContext:
-          allowPrivilegeEscalation: false
-          capabilities:
-            drop:
-            - ALL
-
         ports:
         - containerPort: 80
