@@ -18,6 +18,6 @@ spec:
 
       containers:
       - name: nginx
-        image: harbor.clab.ai/oss/nginx:1.27.0
+        image: harbor.clab.ai/oss/nginx:1.27.1
         ports:
         - containerPort: 80
