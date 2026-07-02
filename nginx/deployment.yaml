@@ -19,8 +19,7 @@ spec:
 
       containers:
       - name: nginx
-        image: nginx:1.27.0
-
+        image: harbor.clab.ai/oss/nginx:1.27.0
         securityContext:
           allowPrivilegeEscalation: false
           capabilities:
